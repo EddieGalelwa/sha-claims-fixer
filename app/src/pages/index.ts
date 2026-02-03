@@ -1,0 +1,11 @@
+export { LoginPage } from './auth/LoginPage';
+export { RegisterPage } from './auth/RegisterPage';
+export { DashboardPage } from './dashboard/DashboardPage';
+export { ClaimsPage } from './claims/ClaimsPage';
+export { ClaimDetailPage } from './claims/ClaimDetailPage';
+export { HospitalsPage } from './hospitals/HospitalsPage';
+export { HospitalDetailPage } from './hospitals/HospitalDetailPage';
+export { PaymentsPage } from './payments/PaymentsPage';
+export { ConversationsPage } from './conversations/ConversationsPage';
+export { SettingsPage } from './settings/SettingsPage';
+export { NotFoundPage } from './NotFoundPage';
