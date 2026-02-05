@@ -1,96 +1,64 @@
 # ============================================
-# SHA CLAIMS FIXER - ENVIRONMENT CONFIGURATION
+# SERVER CONFIGURATION
 # ============================================
-
-# Server Configuration
-NODE_ENV=development
+NODE_ENV=production
 PORT=5000
-API_BASE_URL=https://your-api-url.com
+API_BASE_URL=https://your-backend-url.com
 FRONTEND_URL=https://your-frontend-url.com
 
-# MongoDB Configuration
-MONGODB_URI=mongodb+srv://galelwa27112_db_user:BjzJXMoNqMIL24ty@cluster0.gxdkyov.mongodb.net/sha_claims?retryWrites=true&w=majority
+# ============================================
+# MONGODB
+# ============================================
+MONGODB_URI=mongodb+srv://galelwa27112_db_user:TlsqEM55ZXU5bWBr@cluster1.qnqtn7g.mongodb.net/SHA%20Claims%20fixer?retryWrites=true&w=majority
 
-# JWT Configuration
-JWT_SECRET=your-super-secret-jwt-key-min-32-characters-long
+# ============================================
+# JWT
+# ============================================
+JWT_SECRET=EAAMRy59fHdsBQquSamh1tBlLZCS0oBjKBIVVwgYxfg0yiZCdHaHVpak6OmZBbk1WAEbOY7OudzgGE86mpMHApwp0tgnq4dKqHlubIyJbJQ8HQlC2mZAZBCMQ4RsJYRXmOJdRZASgKy3mkq42ibBJz97OljJazlZA1RkmsNjIW2v1LL5xIS8JlqHrE4sapQeul1c1SCOMntkvnPs2FZCc00O5vdPyBVMZBrwFLqPvVdsot31btzu1dd9Y5b16wOgxbZCK1r8MbyIHZCZApxNKZCpaBMVTkFeKq # Randomly generated
 JWT_EXPIRES_IN=7d
 
 # ============================================
-# META WHATSAPP BUSINESS CLOUD API
+# META WHATSAPP (from Step 3)
 # ============================================
-
-# Get these from Meta Business Suite > WhatsApp > API Setup
-META_ACCESS_TOKEN=EAABsbCS1iHgBA...
-META_PHONE_NUMBER_ID=123456789012345
-META_BUSINESS_ACCOUNT_ID=987654321098765
-
-# Webhook Verification (set in Meta Dashboard)
-META_VERIFY_TOKEN=eddie123456789
-
-# Meta API Base URL
+META_ACCESS_TOKEN=EAAMRy59fHdsBQquSamh1tBlLZCS0oBjKBIVVwgYxfg0yiZCdHaHVpak6OmZBbk1WAEbOY7OudzgGE86mpMHApwp0tgnq4dKqHlubIyJbJQ8HQlC2mZAZBCMQ4RsJYRXmOJdRZASgKy3mkq42ibBJz97OljJazlZA1RkmsNjIW2v1LL5xIS8JlqHrE4sapQeul1c1SCOMntkvnPs2FZCc00O5vdPyBVMZBrwFLqPvVdsot31btzu1dd9Y5b16wOgxbZCK1r8MbyIHZCZApxNKZCpaBMVTkFeKq
+META_PHONE_NUMBER_ID=894699720403959
+META_BUSINESS_ACCOUNT_ID=894852469986109
+META_WEBHOOK_VERIFY_TOKEN=EAAMRy59fHdsBQquSamh1tBlLZCS0oBjKBIVVwgYxfg0yiZCdHaHVpak6OmZBbk1WAEbOY7OudzgGE86mpMHApwp0tgnq4dKqHlubIyJbJQ8HQlC2mZAZBCMQ4RsJYRXmOJdRZASgKy3mkq42ibBJz97OljJazlZA1RkmsNjIW2v1LL5xIS8JlqHrE4sapQeul1c1SCOMntkvnPs2FZCc00O5vdPyBVMZBrwFLqPvVdsot31btzu1dd9Y5b16wOgxbZCK1r8MbyIHZCZApxNKZCpaBMVTkFeKq
 META_API_BASE_URL=https://graph.facebook.com/v18.0
+META_APP_SECRET=854c985609398ba56c17cea3809685df
 
 # ============================================
-# M-PESA DARAJA API (Safaricom)
+# M-PESA DARAJA (from Step 4)
 # ============================================
-
-# Daraja API Credentials (from Safaricom Developer Portal)
-MPESA_CONSUMER_KEY=your-consumer-key
-MPESA_CONSUMER_SECRET=your-consumer-secret
-MPESA_PASSKEY=your-passkey
-
-# Business Shortcode (Paybill or Till Number)
-MPESA_SHORTCODE=174379
-
-# For sandbox testing
+MPESA_CONSUMER_KEY=1TLTxRbU26XYXNgWO1zv5VQixpYqXdpgyEVuzAa5h1DpwGGu
+MPESA_CONSUMER_SECRET=pnzA3ptTa6jQg2SprT606JPHD6gRUKKsfVUiVK2VxAdCQCJKcZuZ8TBmuppLhV7M
+MPESA_PASSKEY=bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919
+MPESA_SHORTCODE=9349829
 MPESA_ENVIRONMENT=sandbox
 
-# Callback URLs (must be HTTPS and publicly accessible)
-MPESA_CALLBACK_URL=https://your-api-url.com/webhooks/mpesa/callback
-MPESA_VALIDATION_URL=https://your-api-url.com/webhooks/mpesa/validation
-MPESA_CONFIRMATION_URL=https://your-api-url.com/webhooks/mpesa/confirmation
+# These will be updated after deployment
+MPESA_CALLBACK_URL=https://your-backend-url.com/webhooks/mpesa/callback
+MPESA_VALIDATION_URL=https://your-backend-url.com/webhooks/mpesa/validation
+MPESA_CONFIRMATION_URL=https://your-backend-url.com/webhooks/mpesa/confirmation
 
 # ============================================
-# CLOUDINARY (Document Storage)
+# CLOUDINARY (from Step 5)
 # ============================================
-
-CLOUDINARY_CLOUD_NAME=your-cloud-name
-CLOUDINARY_API_KEY=your-api-key
-CLOUDINARY_API_SECRET=your-api-secret
+CLOUDINARY_CLOUD_NAME=dpgnxxlzp
+CLOUDINARY_API_KEY=561427414672689
+CLOUDINARY_API_SECRET=rg-TVxoLxJtXeGXV5IUZsu5u6zs
 
 # ============================================
-# SECURITY & ENCRYPTION
+# SECURITY
 # ============================================
-
-# AES-256 Encryption Key (32 characters)
-ENCRYPTION_KEY=your-32-char-encryption-key!!
-
-# For webhook signature verification
-META_APP_SECRET=your-meta-app-secret
-
-# Rate Limiting
+ENCRYPTION_KEY=EAAMRy59fHdsBQquSamh1tBlLZCS0oBjKBIVVwgYxfg0yiZCdHaHVpak6OmZBbk1WAEbOY7OudzgGE86mpMHApwp0tgnq4dKqHlubIyJbJQ8HQlC2mZAZBCMQ4RsJYRXmOJdRZASgKy3mkq42ibBJz97OljJazlZA1RkmsNjIW2v1LL5xIS8JlqHrE4sapQeul1c1SCOMntkvnPs2FZCc00O5vdPyBVMZBrwFLqPvVdsot31btzu1dd9Y5b16wOgxbZCK1r8MbyIHZCZApxNKZCpaBMVTkFeKq # Randomly generated
 RATE_LIMIT_WINDOW_MS=60000
-RATE_LIMIT_MAX_REQUESTS=10
+RATE_LIMIT_MAX_REQUESTS=100
 
 # ============================================
 # APPLICATION SETTINGS
 # ============================================
-
-# Claim pricing (KES)
 CLAIM_PRICE_KES=300
 WEEKLY_RETAINER_KES=5000
-
-# Free tier limit
 FREE_CLAIMS_PER_MONTH=1
-
-# Auto-delete claim images after (days)
 CLAIM_IMAGE_RETENTION_DAYS=90
-
-# ============================================
-# FEATURE FLAGS
-# ============================================
-
-ENABLE_WHATSAPP_WEBHOOKS=true
-ENABLE_MPESA_INTEGRATION=true
-ENABLE_AUTO_DELETE=true
-ENABLE_ENCRYPTION=true
